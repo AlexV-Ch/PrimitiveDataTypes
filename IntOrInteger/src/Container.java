@@ -9,8 +9,5 @@ public class Container {
         return count;
     }
 
-    public String alfavit = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-
-
     }
 
