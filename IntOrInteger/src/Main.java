@@ -7,13 +7,14 @@ public class Main {
         // TODO: ниже напишите код для выполнения задания :
         //  С помощью цикла и преобразования чисел в символы найдите все коды
         //  букв русского алфавита — заглавных и строчных, в том числе буквы Ё.
+        String alfavit = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя";
         char a1 = 'Ё';
         char a2 = 'ё';
         int codeA1 = a1;
         int codeA2 = a2;
         System.out.println(codeA1);
         System.out.println(codeA2);
-        System.out.println();
+        System.out.println(alfavit);
 
 
 
