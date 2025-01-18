@@ -8,14 +8,15 @@ public class Main {
         //  С помощью цикла и преобразования чисел в символы найдите все коды
         //  букв русского алфавита — заглавных и строчных, в том числе буквы Ё.
 
-        //char a1 = 'Ё';
-        //char a2 = 'ё';
-        //int codeA1 = a1;
-        //int codeA2 = a2;
-        //System.out.println(codeA1);
-        //System.out.println(codeA2);
+        char a1 = 'Ё';
+        char a2 = 'ё';
+        int codeA1 = a1;
+        int codeA2 = a2;
+        System.out.println(codeA1);
+        System.out.println(codeA2);
         //System.out.println(alfavit);
 
+        // Первый вариант
 
         String alfavit = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя";
         for (int i = 0; i < 65536; i++) {
@@ -25,5 +26,13 @@ public class Main {
             }
         }
 
+        // Второй вариант
+
+        for (char ch = 'Ё'; ch <= 'ё'; ch++){
+            if ((ch > 'Ё' && ch < 'А') || (ch > 'я' && ch < 'ё')){
+                continue;
+            }
+            System.out.println(ch + " - " + (int) ch);
+        }
     }
 }
